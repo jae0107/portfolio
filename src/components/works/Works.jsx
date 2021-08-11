@@ -43,21 +43,21 @@ const Works = () => {
     return (
         <div className="works" id="works">
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
-                {data.map((d) => (
+                {data.map((datum) => (
                     <div className="container">
                         <div className="item">
                             <div className="left">
                                 <div className="leftContainer">
                                     <div className="imgContainer">
-                                        <img src={d.icon} alt="" />
+                                        <img src={datum.icon} alt="" />
                                     </div>
-                                    <h2>{d.title}</h2>
-                                    <p>{d.desc}</p>
+                                    <h2>{datum.title}</h2>
+                                    <p>{datum.desc}</p>
                                     <span>Projects</span>
                                 </div>
                             </div>
                             <div className="right">
-                                <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930" alt="" />
+                                <img src={datum.img} alt="" />
                             </div>
                         </div>
                     </div>

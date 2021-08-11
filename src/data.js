@@ -2,7 +2,7 @@ export const featuredPortfolio = [
     {
       id: 1,
       title: "Social Media App",
-      img://"../assets/IMG_2110-removebg-preview.png"
+      img://"assets/IMG_2110-removebg-preview.png"
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     },
     {
