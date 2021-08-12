@@ -56,12 +56,12 @@ const Portfolio = () => {
             <h1>Portfolio</h1>
             <ul>
                 {list.map(item => (
-                    <PortfolioList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
+                    <PortfolioList key={item.id} title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
                 ))}
             </ul>
             <div className="container">
                 {data.map(datum => (
-                    <div className="item">
+                    <div key={datum.id} className="item">
                         <img src={datum.img} alt="" />
                         <h3>{datum.title}</h3>
                     </div>

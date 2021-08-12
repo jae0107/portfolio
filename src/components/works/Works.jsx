@@ -44,7 +44,7 @@ const Works = () => {
         <div className="works" id="works">
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                 {data.map((datum) => (
-                    <div className="container">
+                    <div className="container" key={datum.id}>
                         <div className="item">
                             <div className="left">
                                 <div className="leftContainer">

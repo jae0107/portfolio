@@ -15,7 +15,7 @@ const Contact = () => {
         }, (error) => {
             console.log(error.text);
         });
-
+        
         e.target.reset();
     }
 
@@ -29,9 +29,10 @@ const Contact = () => {
                 <form className="contact-form" onSubmit={sendEmail}>
                     <input type="text" name="from_name" placeholder="Your Name"/>
                     <input type="email" name="from_email" placeholder="Your Email"/>
-                    <textarea name="message" placeholder="Message"/>
+                    <textarea id="textarea" name="message" placeholder="Message"/>
                     <button type="submit" value="Send" >Send</button>
                     {message && <span>Thanks, I'll reply ASAP :) </span>}
+                    <div id="copy"></div>
                 </form>
             </div>
         </div>
