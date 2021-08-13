@@ -1,8 +1,7 @@
 @import "../../global.scss";
 
 .intro {
-  //background-color: white;
-  background: linear-gradient(45deg, #dfe8eb 50%, rgb(63, 60, 60));
+  background: $mainBackgroung;
   display: flex;
 
   @include mobile {
@@ -31,6 +30,7 @@
       img {
         //height: 90%;
         border-radius: 50%;
+
         @include mobile {
           height: 50%;
         }

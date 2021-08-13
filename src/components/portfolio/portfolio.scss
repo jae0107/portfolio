@@ -1,8 +1,7 @@
 @import "../../global.scss";
 
 .portfolio {
-  //background-color: white;
-  background: linear-gradient(45deg, #dfe8eb 50%, rgb(63, 60, 60));
+  background: $mainBackgroung;
   display: flex;
   flex-direction: column;
   align-items: center;
