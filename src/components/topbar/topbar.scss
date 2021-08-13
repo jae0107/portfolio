@@ -4,7 +4,7 @@
   width: 100%;
   height: 70px;
   background-color: white;
-  color: $mainColor;
+  color: $mainFontColor;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -80,6 +80,7 @@
 
   &.active {
     background-color: $mainColor;
+    //background-color: #16181b;
     color: white;
 
     .hamburger {

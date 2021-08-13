@@ -25,7 +25,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
                             menuOpen ? <Link style={{ color: 'white' }} to={{ pathname: "https://www.linkedin.com/in/jae-choi-11422a185/" }} target="_blank" >
                                             <LinkedInIcon className="icon" />
                                         </Link> : 
-                                        <Link style={{ color: '#15023a' }} to={{ pathname: "https://www.linkedin.com/in/jae-choi-11422a185/" }} target="_blank" >
+                                        <Link style={{ color: '#16181b' }} to={{ pathname: "https://www.linkedin.com/in/jae-choi-11422a185/" }} target="_blank" >
                                             <LinkedInIcon className="icon" />
                                         </Link>
                         }
@@ -35,7 +35,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
                             menuOpen ? <Link style={{ color: 'white' }} to={{ pathname: "https://github.com/jae0107" }} target="_blank" >
                                             <GitHubIcon className="icon" />
                                         </Link> : 
-                                        <Link style={{ color: '#15023a' }} to={{ pathname: "https://github.com/jae0107" }} target="_blank" >
+                                        <Link style={{ color: '#16181b' }} to={{ pathname: "https://github.com/jae0107" }} target="_blank" >
                                             <GitHubIcon className="icon" />
                                         </Link>
                         }
@@ -43,7 +43,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
                     <div className="itemContainer">
                         {
                             menuOpen ? <Link style={{ color: 'white' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link> : 
-                            <Link style={{ color: '#15023a' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link>
+                            <Link style={{ color: '#16181b' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link>
                         }
                     </div>
                 </div>

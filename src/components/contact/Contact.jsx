@@ -36,13 +36,13 @@ const Contact = () => {
                         <a href="mailto:ghjgjh0107@gmail.com">ghjgjh0107@gmail.com</a>
                     </div>
                     <div className="itemContainer">
-                        <Link style={{ color: '#15023a' }} to={{ pathname: "https://www.linkedin.com/in/jae-choi-11422a185/" }} target="_blank" >
+                        <Link style={{ color: '#16181b' }} to={{ pathname: "https://www.linkedin.com/in/jae-choi-11422a185/" }} target="_blank" >
                             <LinkedInIcon className="icon" />
                         </Link>
-                        <Link style={{ color: '#15023a', marginLeft: '30px' }} to={{ pathname: "https://github.com/jae0107" }} target="_blank" >
+                        <Link style={{ color: '#16181b', marginLeft: '30px' }} to={{ pathname: "https://github.com/jae0107" }} target="_blank" >
                             <GitHubIcon className="icon" />
                         </Link>
-                        <Link style={{ color: '#15023a', marginLeft: '30px' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link>
+                        <Link style={{ color: '#16181b', marginLeft: '30px' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link>
                     </div>
                     <div className="location">
                         <h2>Location</h2>
@@ -56,16 +56,16 @@ const Contact = () => {
             <div className="right">
                 <h2>Contact</h2>
                 <form className="contact-form" onSubmit={sendEmail}>
-                    <div class="form-group">
-                        <label className="sr-only" for="fname">Name *</label>
+                    <div className="form-group">
+                        <label className="sr-only" htmlFor="fname">Name *</label>
                         <input className="required form-control" id="fname" placeholder="Name&nbsp;*" type="text" name="from_name" />
                     </div>
                     <div className="form-group">
-                        <label className="sr-only" for="contactEmail">Email *</label>
+                        <label className="sr-only" htmlFor="contactEmail">Email *</label>
                         <input type="email" name="from_email" className="required form-control h5-email" id="contactEmail" placeholder="Email&nbsp;*"></input>
                     </div>
                     <div className="form-group">
-                        <label className="sr-only" for="comment">Type your message here</label>
+                        <label className="sr-only" htmlFor="comment">Type your message here</label>
                         <textarea className="required form-control" id="textarea" name="message" placeholder="Type your message here&nbsp;*" rows="6"></textarea>
                     </div>
                     <button type="submit" value="Send" >Send</button>

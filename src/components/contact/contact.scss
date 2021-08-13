@@ -1,7 +1,8 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
+  //background-color: white;
+  background: linear-gradient(45deg, #dfe8eb 50%, rgb(63, 60, 60));
   display: flex;
 
   @include mobile {
@@ -128,7 +129,7 @@
 }
 
 .form-control {
-  border: 1px solid #2fbfbc;
+  border: 1px solid #080808;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -194,6 +195,7 @@
 .form-group textarea {
   font-size: 16px;
 }
+
 .location a.btn.btn-accent {
   padding: 12px 26px 10px;
   margin-top: 10px;
