@@ -15,7 +15,7 @@ const Contact = () => {
         }, (error) => {
             console.log(error.text);
         });
-        
+
         e.target.reset();
     }
 
@@ -25,7 +25,7 @@ const Contact = () => {
                 <img src="assets/shake.svg" alt="" />
             </div>
             <div className="right">
-                <h2>Contact.</h2>
+                <h2>Contact</h2>
                 <form className="contact-form" onSubmit={sendEmail}>
                     <input type="text" name="from_name" placeholder="Your Name"/>
                     <input type="email" name="from_email" placeholder="Your Email"/>
