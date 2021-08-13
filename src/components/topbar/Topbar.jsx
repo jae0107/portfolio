@@ -40,6 +40,12 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
                                         </Link>
                         }
                     </div>
+                    <div className="itemContainer">
+                        {
+                            menuOpen ? <Link style={{ color: 'white' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link> : 
+                            <Link style={{ color: '#15023a' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link>
+                        }
+                    </div>
                 </div>
                 <div className="right">
                     <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

@@ -42,6 +42,7 @@ const Contact = () => {
                         <Link style={{ color: '#15023a', marginLeft: '30px' }} to={{ pathname: "https://github.com/jae0107" }} target="_blank" >
                             <GitHubIcon className="icon" />
                         </Link>
+                        <Link style={{ color: '#15023a', marginLeft: '30px' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link>
                     </div>
                     <div className="location">
                         <h2>Location</h2>
