@@ -8,9 +8,21 @@
     flex-direction: column;
   }
 
+  .itemContainer {
+    display: flex;
+
+    .icon {
+      font-size: 18px;
+    }
+  }
+
   .left {
     flex: 1;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     img {
       height: 100%;
@@ -24,7 +36,17 @@
     justify-content: center;
 
     h2 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 900;
+      color: #101f1d;
       font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1.25px;
+      margin-bottom: 5px;
+
+      @include mobile {
+        font-size: 15px;
+      }
     }
 
     form {
@@ -74,11 +96,108 @@
         &:focus {
           outline: none;
         }
+
+        &:hover {
+          background: #960220;
+        }
       }
 
       span {
         color: green;
       }
     }
+  }
+}
+
+.form-control {
+  border: 1px solid #2fbfbc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+}
+
+.phone {
+  padding-top: 50px;
+}
+
+.phone,
+.email {
+  margin-bottom: 20px;
+}
+
+.location {
+  margin-top: 20px;
+}
+
+.phone h2,
+.email h2,
+.location h2 {
+  margin-top: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #101f1d;
+  font-size: 35px;
+  letter-spacing: 1.25px;
+}
+
+.phone a,
+.email a,
+.location a {
+  color: #fd4f00;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  margin-top: -40px;
+
+  @include mobile {
+    flex-direction: column;
+    font-size: 10px;
+
+    h2 {
+      font-size: 13px;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+}
+.form-group input,
+.form-group textarea {
+  font-size: 16px;
+}
+.location a.btn.btn-accent {
+  padding: 12px 26px 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+  background: #2fbfbc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 0.3px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: #269694;
+  }
+
+  @include mobile {
+    padding: 9px 20px 7px;
+    font-size: 13px;
   }
 }
