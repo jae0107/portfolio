@@ -9,3 +9,15 @@ $width: 768px;
     @content;
   }
 }
+
+@mixin iphone5 {
+  @media (max-width: 325px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: 769px) {
+    @content;
+  }
+}

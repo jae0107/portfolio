@@ -53,13 +53,22 @@
       cursor: pointer;
 
       @include mobile {
-        width: 130px;
-        height: 100px;
+        width: 125px;
+        height: 95px;
+      }
+
+      @include iphone5 {
+        width: 100px;
+        height: 70px;
       }
 
       h3 {
         position: absolute;
         font-size: 20px;
+
+        @include mobile {
+          font-size: 15px;
+        }
       }
 
       img {
