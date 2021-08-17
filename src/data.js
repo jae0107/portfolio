@@ -6,7 +6,7 @@ export const featuredPortfolio = [
       img:
         "assets/zoom-home.png",
       content: "assets/zoom-content.png",
-      desc: "",
+      desc: "This is a video chat application.",
       link: "https://shrouded-island-88990.herokuapp.com/",
       detail: "https://github.com/jae0107/zoom-clone"
     },
@@ -17,7 +17,7 @@ export const featuredPortfolio = [
       img:
         "assets/youtube-home.png",
       content: "assets/youtube-content.jpeg",
-      desc: "",
+      desc: "This is a YouTube clone.",
       link: "https://clone-bcd17.web.app/",
       detail: "https://github.com/jae0107/youtube-clone"
     },
@@ -28,7 +28,7 @@ export const featuredPortfolio = [
       img:
         "assets/e-commerce-home.png",
       content: "assets/e-commerce-content.png",
-      desc: "",
+      desc: "This is an E-Commerce web.",
       link: "",
       detail: "https://github.com/jae0107/Ecommerce-App"
     },
@@ -39,7 +39,7 @@ export const featuredPortfolio = [
       img:
         "assets/mobile-tag-game.png",
       content: "assets/mobile-tag-game-content.PNG",
-      desc: "",
+      desc: "This is a tag game which can be played on mobiles, tablets and computers.",
       link: "",
       detail: "https://github.com/jae0107/Mobile-Tag-Game"
     },
@@ -50,7 +50,7 @@ export const featuredPortfolio = [
       img:
         "assets/portfolio-home.png",
       content: "assets/portfolio-content.png",
-      desc: "",
+      desc: "This is my portfolio website.",
       link: "/",
       detail: "https://github.com/jae0107/portfolio"
     },
@@ -61,7 +61,7 @@ export const featuredPortfolio = [
       img:
         "assets/maptek-home.jpg",
       content: "assets/staff-management-content.png",
-      desc: "",
+      desc: "This is a staff management tool for Maptek which is an Adelaide-based company.",
       link: "",
       detail: "https://github.com/jae0107/Maptek-Staff-Management-Utility"
     },
@@ -72,7 +72,7 @@ export const featuredPortfolio = [
       img:
         "assets/educational-web-home.png",
       content: "assets/educational-web-content.png",
-      desc: "",
+      desc: "This web application is an educational web application like university websites.",
       link: "",
       detail: "https://github.com/jae0107/Educational-Web-Application"
     }
