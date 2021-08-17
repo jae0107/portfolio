@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./works.scss";
+import { featuredPortfolio } from "../../data";
 
 const Works = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        setData(featuredPortfolio);
+    }, []);
 
+    const [currentSlide, setCurrentSlide] = useState(0);
+/*
     const data = [
         {
             id: "1",
@@ -33,10 +39,10 @@ const Works = () => {
                 "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
         },
     ];
-
+*/
     const handleClick = (way) => {
         way === "left"
-            ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
+            ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : data.length-1)
             : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     };
 
@@ -57,7 +63,7 @@ const Works = () => {
                                 </div>
                             </div>
                             <div className="right">
-                                <img src={datum.img} alt="" />
+                                <img src={datum.content} alt="" />
                             </div>
                         </div>
                     </div>
