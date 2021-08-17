@@ -7,6 +7,8 @@ export const featuredPortfolio = [
         "assets/zoom-home.png",
       content: "assets/zoom-content.png",
       desc: "",
+      link: "https://shrouded-island-88990.herokuapp.com/",
+      detail: "https://github.com/jae0107/zoom-clone"
     },
     {
       id: 2,
@@ -16,6 +18,8 @@ export const featuredPortfolio = [
         "assets/youtube-home.png",
       content: "assets/youtube-content.jpeg",
       desc: "",
+      link: "https://clone-bcd17.web.app/",
+      detail: "https://github.com/jae0107/youtube-clone"
     },
     {
       id: 3,
@@ -25,6 +29,8 @@ export const featuredPortfolio = [
         "assets/e-commerce-home.png",
       content: "assets/e-commerce-content.png",
       desc: "",
+      link: "",
+      detail: "https://github.com/jae0107/Ecommerce-App"
     },
     {
       id: 4,
@@ -34,6 +40,8 @@ export const featuredPortfolio = [
         "assets/mobile-tag-game.png",
       content: "assets/mobile-tag-game-content.PNG",
       desc: "",
+      link: "",
+      detail: "https://github.com/jae0107/Mobile-Tag-Game"
     },
     {
       id: 5,
@@ -43,6 +51,8 @@ export const featuredPortfolio = [
         "assets/portfolio-home.png",
       content: "assets/portfolio-content.png",
       desc: "",
+      link: "/",
+      detail: "https://github.com/jae0107/portfolio"
     },
     {
       id: 6,
@@ -52,6 +62,8 @@ export const featuredPortfolio = [
         "assets/maptek-home.jpg",
       content: "assets/staff-management-content.png",
       desc: "",
+      link: "",
+      detail: "https://github.com/jae0107/Maptek-Staff-Management-Utility"
     },
     {
       id: 7,
@@ -61,5 +73,7 @@ export const featuredPortfolio = [
         "assets/educational-web-home.png",
       content: "assets/educational-web-content.png",
       desc: "",
+      link: "",
+      detail: "https://github.com/jae0107/Educational-Web-Application"
     }
   ];
