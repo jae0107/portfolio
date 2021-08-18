@@ -30,6 +30,7 @@ const Works = () => {
                                     </div>
                                     <h2>{datum.title}</h2>
                                     <p>{datum.desc}</p>
+                                    <p>{datum.usage}</p>
                                     {datum.link !== "" ? <Link to={{ pathname: datum.link }} target="_blank">Link</Link> : <></>}
                                     <Link to={{ pathname: datum.detail }} target="_blank">Detail</Link>
                                 </div>
