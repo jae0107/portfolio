@@ -37,10 +37,19 @@ const Skills = () => {
                     <img src="assets/java-logo.png" alt="java" />
                 </div>
                 <div className="imgContainer">
+                    <img src="assets/javascript-icon.png" alt="JavaScript" />
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/html5-icon.png" alt="HTML5" />
+                </div>
+                <div className="imgContainer">
                     <img src="assets/c-plus-plus-logo.png" alt="C++" />
                 </div>
                 <div className="imgContainer">
                     <img src="assets/git-icon.png" alt="git" />
+                </div>
+                <div className="imgContainer">
+                    <img src="assets/mysql-logo.png" alt="MySQL" />
                 </div>
             </div>
         </div>
