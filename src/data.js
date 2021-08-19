@@ -9,7 +9,8 @@ export const featuredPortfolio = [
       desc: "This is a video chat application.",
       link: "https://shrouded-island-88990.herokuapp.com/",
       detail: "https://github.com/jae0107/zoom-clone",
-      usage: "Express.js, Node.js, Rxjs and JavaScript"
+      usage: "Express.js, Node.js, Rxjs and JavaScript",
+      video: "assets/video.mp4"
     },
     {
       id: 2,
@@ -18,10 +19,11 @@ export const featuredPortfolio = [
       img:
         "assets/youtube-home.png",
       content: "assets/youtube-content.jpeg",
-      desc: "This is a YouTube clone.",
+      desc: "This is a responsive YouTube clone.",
       link: "https://clone-bcd17.web.app/",
       detail: "https://github.com/jae0107/youtube-clone",
-      usage: "React, Redux, Express.js, firebase and YouTube API"
+      usage: "React, Redux, Express.js, firebase and YouTube API",
+      video: "assets/_talkv_wpS2YDUW0v_3MJckqJkWu3ZTnSEFlIyPK_talkv_high.MP4"
     },
     {
       id: 3,
@@ -33,7 +35,8 @@ export const featuredPortfolio = [
       desc: "This is an E-Commerce web.",
       link: "Angular, Express.js, Node.js and MySQL",
       detail: "https://github.com/jae0107/Ecommerce-App",
-      usage: "Angular, Express.js, Node.js and MySQL"
+      usage: "Angular, Express.js, Node.js and MySQL",
+      video: "assets/_talkv_wpS7xzo8RE_kGGLPvqrzNJl0YFkrvFDP1_talkv_high.MP4"
     },
     {
       id: 4,
@@ -45,7 +48,8 @@ export const featuredPortfolio = [
       desc: "This is a tag game which can be played on mobiles, tablets and computers.",
       link: "",
       detail: "https://github.com/jae0107/Mobile-Tag-Game",
-      usage: "p5.js, Node.js, Rx.js and JavaScript"
+      usage: "p5.js, Node.js, Rx.js and JavaScript",
+      video: "assets/_talkv_wpS98sJjmU_Dj3bFVIUzARc1MmYScpukk_talkv_high.MP4"
     },
     {
       id: 5,
@@ -54,10 +58,11 @@ export const featuredPortfolio = [
       img:
         "assets/portfolio-home.png",
       content: "assets/portfolio-content.png",
-      desc: "This is my portfolio website.",
+      desc: "This is a responsive portfolio website.",
       link: "/",
       detail: "https://github.com/jae0107/portfolio",
-      usage: "React"
+      usage: "React",
+      video: "assets/_talkv_wpTagj0jZm_oOfEbhIMzgMK1GcN5BZMh0_talkv_high.MP4"
     },
     {
       id: 6,
@@ -69,7 +74,8 @@ export const featuredPortfolio = [
       desc: "This is a staff management tool for Maptek which is an Adelaide-based company.",
       link: "",
       detail: "https://github.com/jae0107/Maptek-Staff-Management-Utility",
-      usage: "JavsScript, Google API, Google App Script and Google Sheets"
+      usage: "JavsScript, Google API, Google App Script and Google Sheets",
+      video: ""
     },
     {
       id: 7,
@@ -81,6 +87,7 @@ export const featuredPortfolio = [
       desc: "This web application is an educational web application like university websites.",
       link: "",
       detail: "https://github.com/jae0107/Educational-Web-Application",
-      usage: "Ruby on Rails and JavaScript"
+      usage: "Ruby on Rails and JavaScript",
+      video: ""
     }
   ];

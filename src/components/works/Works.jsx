@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./works.scss";
 import { featuredPortfolio } from "../../data";
 import { Link } from 'react-router-dom';
+import ModalVideo from 'react-modal-video';
 
 const Works = () => {
     const [data, setData] = useState([]);
@@ -17,8 +18,19 @@ const Works = () => {
             : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     };
 
+    const [isOpen, setOpen] = useState(false);
+    const [video_src, setVideo] = useState('');
+
+    const videoPlayer = (src) => {
+        setOpen(true);
+        setVideo(src);
+        console.log(src);
+    }    
+
     return (
         <div className="works" id="works">
+            {/*<ModalVideo channel='youtube' isOpen={isOpen} videoId="O6AxxYhCxeQ" onClose={() => setOpen(false)} />*/}
+            <ModalVideo channel='custom' isOpen={isOpen} url={video_src} onClose={() => setOpen(false)} />
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                 {data.map((datum) => (
                     <div className="container" key={datum.id}>
@@ -31,6 +43,8 @@ const Works = () => {
                                     <h2>{datum.title}</h2>
                                     <p>{datum.desc}</p>
                                     <p>{datum.usage}</p>
+
+                                    <button className="btn-primary" onClick={()=> videoPlayer(datum.video)}>VIEW DEMO</button>
                                     {datum.link !== "" ? <Link to={{ pathname: datum.link }} target="_blank">Link</Link> : <></>}
                                     <Link to={{ pathname: datum.detail }} target="_blank">Detail</Link>
                                 </div>
