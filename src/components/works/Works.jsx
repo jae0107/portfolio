@@ -43,8 +43,7 @@ const Works = () => {
                                     <h2>{datum.title}</h2>
                                     <p>{datum.desc}</p>
                                     <p>{datum.usage}</p>
-
-                                    <button className="btn-primary" onClick={()=> videoPlayer(datum.video)}>VIEW DEMO</button>
+                                    <button className="btn btn-primary" onClick={()=> videoPlayer(datum.video)}>Video Instruction</button>
                                     {datum.link !== "" ? <Link to={{ pathname: datum.link }} target="_blank">Link</Link> : <></>}
                                     <Link to={{ pathname: datum.detail }} target="_blank">Detail</Link>
                                 </div>
