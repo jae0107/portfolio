@@ -10,7 +10,7 @@ export const featuredPortfolio = [
       link: "https://shrouded-island-88990.herokuapp.com/",
       detail: "https://github.com/jae0107/zoom-clone",
       usage: "Express.js, Node.js, Peer.js and JavaScript",
-      video: "assets/youtube-video.mp4"
+      video: "assets/zoom-video.mp4"
     },
     {
       id: 2,
