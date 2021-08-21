@@ -29,7 +29,6 @@ const Works = () => {
 
     return (
         <div className="works" id="works">
-            {/*<ModalVideo channel='youtube' isOpen={isOpen} videoId="O6AxxYhCxeQ" onClose={() => setOpen(false)} />*/}
             <ModalVideo channel='custom' isOpen={isOpen} url={video_src} onClose={() => setOpen(false)} />
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                 {data.map((datum) => (
