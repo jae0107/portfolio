@@ -4,9 +4,15 @@ $mainBackground: linear-gradient(45deg, #dfe8eb 50%, rgb(63, 60, 60));
 
 $width: 768px;
 
-@mixin mobile {
-  //iPhone6,7,8 & Galaxy S
-  @media (max-width: 375px) and (min-width: 321px) {
+@mixin galaxy {
+  @media (max-width: 360px) and (min-width: 321px) {
+    @content;
+  }
+}
+
+@mixin iphoneX {
+  //iPhone6,7,8
+  @media (max-width: 375px) and (min-width: 361px) {
     @content;
   }
 }
@@ -24,9 +30,9 @@ $width: 768px;
   }
 }
 
-@mixin pro {
-  //iPhone Pro & Pixel
-  @media (max-width: 414px) and (min-width: 410px) {
+@mixin plus {
+  //iPhone plus & Pixel
+  @media (max-width: 550px) and (min-width: 410px) {
     @content;
   }
 }

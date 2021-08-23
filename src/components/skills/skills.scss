@@ -5,14 +5,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: relative;
 
   h1 {
     font-size: 50px;
+    margin-bottom: 20px;
 
-    @include mobile {
-      font-size: 20px;
+    @include galaxy {
+      font-size: 30px;
+    }
+
+    @include iphoneX {
+      font-size: 30px;
+    }
+
+    @include iphone5 {
+      font-size: 30px;
+    }
+
+    @include gFold {
+      font-size: 30px;
+    }
+
+    @include plus {
+      font-size: 30px;
     }
   }
   .container {
@@ -22,7 +38,23 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    @include mobile {
+    @include galaxy {
+      width: 100%;
+    }
+
+    @include iphoneX {
+      width: 100%;
+    }
+
+    @include iphone5 {
+      width: 100%;
+    }
+
+    @include gFold {
+      width: 100%;
+    }
+
+    @include plus {
       width: 100%;
     }
 
@@ -37,9 +69,37 @@
       margin-right: 30px;
       margin-bottom: 30px;
 
-      @include mobile {
-        width: 70px;
-        height: 70px;
+      @include galaxy {
+        width: 79px;
+        height: 79px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+
+      @include iphoneX {
+        width: 85px;
+        height: 85px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+
+      @include iphone5 {
+        width: 75px;
+        height: 75px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      @include gFold {
+        width: 73px;
+        height: 73px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      @include plus {
+        width: 98px;
+        height: 98px;
         margin-right: 20px;
         margin-bottom: 20px;
       }
@@ -47,8 +107,24 @@
       img {
         width: 90px;
 
-        @include mobile {
-          width: 50px;
+        @include galaxy {
+          width: 60px;
+        }
+
+        @include iphoneX {
+          width: 65px;
+        }
+
+        @include iphone5 {
+          width: 55px;
+        }
+
+        @include gFold {
+          width: 53px;
+        }
+
+        @include plus {
+          width: 79px;
         }
       }
     }

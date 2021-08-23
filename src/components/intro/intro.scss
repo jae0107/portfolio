@@ -4,7 +4,27 @@
   background: $mainBackground;
   display: flex;
 
-  @include mobile {
+  @include galaxy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include iphoneX {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include iphone5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include gFold {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include plus {
     flex-direction: column;
     align-items: center;
   }
@@ -23,7 +43,23 @@
       justify-content: center;
       float: right;
 
-      @include mobile {
+      @include galaxy {
+        align-items: flex-start;
+      }
+
+      @include iphoneX {
+        align-items: flex-start;
+      }
+
+      @include iphone5 {
+        align-items: flex-start;
+      }
+
+      @include gFold {
+        align-items: flex-start;
+      }
+
+      @include plus {
         align-items: flex-start;
       }
 
@@ -31,8 +67,24 @@
         //height: 90%;
         border-radius: 50%;
 
-        @include mobile {
+        @include galaxy {
           height: 50%;
+        }
+
+        @include iphoneX {
+          height: 65%;
+        }
+
+        @include iphone5 {
+          height: 45%;
+        }
+
+        @include gFold {
+          height: 53%;
+        }
+
+        @include plus {
+          height: 67%;
         }
       }
     }
@@ -50,7 +102,27 @@
       flex-direction: column;
       justify-content: center;
 
-      @include mobile {
+      @include galaxy {
+        padding-left: 0;
+        align-items: center;
+      }
+
+      @include iphoneX {
+        padding-left: 0;
+        align-items: center;
+      }
+
+      @include iphone5 {
+        padding-left: 0;
+        align-items: center;
+      }
+
+      @include gFold {
+        padding-left: 0;
+        align-items: center;
+      }
+
+      @include plus {
         padding-left: 0;
         align-items: center;
       }
@@ -59,7 +131,19 @@
         font-size: 60px;
         margin: 10px 0;
 
-        @include mobile {
+        @include galaxy {
+          font-size: 40px;
+        }
+
+        @include iphoneX {
+          font-size: 40px;
+        }
+
+        @include iphone5 {
+          font-size: 40px;
+        }
+
+        @include gFold {
           font-size: 40px;
         }
       }
@@ -71,7 +155,19 @@
       h3 {
         font-size: 30px;
 
-        @include mobile {
+        @include galaxy {
+          font-size: 20px;
+        }
+
+        @include iphoneX {
+          font-size: 25px;
+        }
+
+        @include iphone5 {
+          font-size: 20px;
+        }
+
+        @include gFold {
           font-size: 20px;
         }
 

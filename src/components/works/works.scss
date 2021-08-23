@@ -12,8 +12,24 @@
     position: absolute;
     cursor: pointer;
 
-    @include mobile {
+    @include galaxy {
+      bottom: 30px;
+    }
+
+    @include iphoneX {
+      bottom: 50px;
+    }
+
+    @include iphone5 {
       bottom: 10px;
+    }
+
+    @include gFold {
+      bottom: 50px;
+    }
+
+    @include plus {
+      bottom: 90px;
     }
 
     &.left {
@@ -26,7 +42,27 @@
     &.right {
       right: 100px;
 
-      @include mobile {
+      @include galaxy {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
+      }
+
+      @include iphoneX {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
+      }
+
+      @include iphone5 {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
+      }
+
+      @include gFold {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
+      }
+
+      @include plus {
         -webkit-filter: contrast(0%);
         filter: contrast(0%);
       }
@@ -40,7 +76,7 @@
     left: 0;
     transition: all 1s ease-out;
 
-    @include mobile {
+    @include galaxy {
       /*height: 100vh;
       flex-direction: column;
       justify-content: center;*/
@@ -61,7 +97,7 @@
         align-items: center;
         justify-content: center;
 
-        @include mobile {
+        @include galaxy {
           /* width: 80%;
           height: 150px;
           margin: 15px 0;*/
@@ -74,7 +110,23 @@
           align-items: center;
           justify-content: center;
 
-          @include mobile {
+          @include galaxy {
+            flex: 10;
+          }
+
+          @include iphoneX {
+            flex: 10;
+          }
+
+          @include iphone5 {
+            flex: 10;
+          }
+
+          @include gFold {
+            flex: 10;
+          }
+
+          @include plus {
             flex: 10;
           }
 
@@ -94,7 +146,7 @@
               align-items: center;
               justify-content: center;
 
-              @include mobile {
+              @include galaxy {
                 //width: 20px;
                 //height: 20px;
               }
@@ -102,7 +154,7 @@
               img {
                 width: 25px;
 
-                @include mobile {
+                @include galaxy {
                   //width: 15px;
                 }
               }
@@ -111,15 +163,32 @@
             h2 {
               font-size: 20px;
 
-              @include mobile {
+              @include galaxy {
+                font-size: 13px;
+              }
+
+              @include iphoneX {
+                font-size: 13px;
+              }
+
+              @include iphone5 {
+                font-size: 13px;
+              }
+
+              @include gFold {
+                font-size: 11px;
+              }
+
+              @include plus {
                 font-size: 13px;
               }
             }
 
             p {
               font-size: 13px;
-              @include mobile {
-                // display: none;
+
+              @include gFold {
+                font-size: 11px;
               }
             }
 

@@ -25,6 +25,10 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+
+        @include gFold {
+          font-size: 35px;
+        }
       }
 
       a {
@@ -36,7 +40,23 @@
         align-items: center;
         margin-left: 30px;
 
-        @include mobile {
+        @include galaxy {
+          display: none;
+        }
+
+        @include iphoneX {
+          display: none;
+        }
+
+        @include iphone5 {
+          display: none;
+        }
+
+        @include gFold {
+          display: none;
+        }
+
+        @include plus {
           display: none;
         }
 

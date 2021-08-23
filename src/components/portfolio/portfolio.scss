@@ -9,21 +9,24 @@
   h1 {
     font-size: 50px;
 
-    @include mobile {
-      font-size: 20px;
+    @include galaxy {
+      font-size: 30px;
     }
-  }
 
-  ul {
-    margin: 10px;
-    padding: 0;
-    list-style: none;
-    display: flex;
+    @include iphoneX {
+      font-size: 30px;
+    }
 
-    @include mobile {
-      margin: 10px 0;
-      flex-wrap: wrap;
-      justify-content: center;
+    @include iphone5 {
+      font-size: 30px;
+    }
+
+    @include gFold {
+      font-size: 30px;
+    }
+
+    @include plus {
+      font-size: 30px;
     }
   }
 
@@ -34,7 +37,23 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    @include mobile {
+    @include galaxy {
+      width: 100%;
+    }
+
+    @include iphoneX {
+      width: 100%;
+    }
+
+    @include iphone5 {
+      width: 100%;
+    }
+
+    @include gFold {
+      width: 100%;
+    }
+
+    @include plus {
       width: 100%;
     }
 
@@ -52,16 +71,54 @@
       transition: all 0.5s ease;
       cursor: pointer;
 
-      @include mobile {
+      @include galaxy {
         width: 125px;
         height: 95px;
+      }
+
+      @include iphoneX {
+        width: 125px;
+        height: 95px;
+      }
+
+      @include iphone5 {
+        width: 125px;
+        height: 95px;
+        margin: 5px 10px;
+      }
+
+      @include gFold {
+        width: 105px;
+        height: 75px;
+        margin: 5px 10px;
+      }
+
+      @include plus {
+        width: 140px;
+        height: 110px;
       }
 
       h3 {
         position: absolute;
         font-size: 20px;
 
-        @include mobile {
+        @include galaxy {
+          font-size: 15px;
+        }
+
+        @include iphoneX {
+          font-size: 15px;
+        }
+
+        @include iphone5 {
+          font-size: 15px;
+        }
+
+        @include gFold {
+          font-size: 15px;
+        }
+
+        @include plus {
           font-size: 15px;
         }
       }

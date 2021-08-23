@@ -4,7 +4,23 @@
   background: $mainBackground;
   display: flex;
 
-  @include mobile {
+  @include galaxy {
+    flex-direction: column;
+  }
+
+  @include iphoneX {
+    flex-direction: column;
+  }
+
+  @include iphone5 {
+    flex-direction: column;
+  }
+
+  @include gFold {
+    flex-direction: column;
+  }
+
+  @include plus {
     flex-direction: column;
   }
 
@@ -19,13 +35,53 @@
       font-size: 15px;
     }
 
-    @include mobile {
+    @include galaxy {
       .icon {
         font-size: 14px;
       }
 
       a {
         font-size: 10px;
+      }
+    }
+
+    @include iphoneX {
+      .icon {
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 10px;
+      }
+    }
+
+    @include iphone5 {
+      .icon {
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 10px;
+      }
+    }
+
+    @include gFold {
+      .icon {
+        font-size: 14px;
+      }
+
+      a {
+        font-size: 10px;
+      }
+    }
+
+    @include plus {
+      .icon {
+        font-size: 15px;
+      }
+
+      a {
+        font-size: 11px;
       }
     }
   }
@@ -53,6 +109,26 @@
     align-items: center;
     justify-content: center;
 
+    @include galaxy {
+      margin-top: -70px;
+    }
+
+    @include iphoneX {
+      margin-top: -100px;
+    }
+
+    @include iphone5 {
+      margin-top: -60px;
+    }
+
+    @include gFold {
+      margin-top: -70px;
+    }
+
+    @include plus {
+      margin-top: -100px;
+    }
+
     h2 {
       font-family: "Raleway", sans-serif;
       font-weight: 900;
@@ -62,7 +138,23 @@
       letter-spacing: 1.25px;
       margin-bottom: 5px;
 
-      @include mobile {
+      @include galaxy {
+        font-size: 15px;
+      }
+
+      @include iphoneX {
+        font-size: 15px;
+      }
+
+      @include iphone5 {
+        font-size: 15px;
+      }
+
+      @include gFold {
+        font-size: 15px;
+      }
+
+      @include plus {
         font-size: 15px;
       }
     }
@@ -75,18 +167,34 @@
       align-items: center;
       justify-content: space-around;
 
-      @include mobile {
-        justify-content: space-around;
-      }
-
       input {
         width: 300px;
         height: 30px;
         font-size: 14px;
 
-        @include mobile {
-          width: 200px;
-          height: 20px;
+        @include galaxy {
+          width: 250px;
+          height: 30px;
+        }
+
+        @include iphoneX {
+          width: 250px;
+          height: 30px;
+        }
+
+        @include iphone5 {
+          width: 250px;
+          height: 25px;
+        }
+
+        @include gFold {
+          width: 230px;
+          height: 30px;
+        }
+
+        @include plus {
+          width: 300px;
+          height: 35px;
         }
       }
 
@@ -95,9 +203,29 @@
         height: 200px;
         font-size: 14px;
 
-        @include mobile {
-          width: 200px;
-          height: 100px;
+        @include galaxy {
+          width: 250px;
+          height: 150px;
+        }
+
+        @include iphoneX {
+          width: 250px;
+          height: 150px;
+        }
+
+        @include iphone5 {
+          width: 250px;
+          height: 120px;
+        }
+
+        @include gFold {
+          width: 230px;
+          height: 150px;
+        }
+
+        @include plus {
+          width: 300px;
+          height: 185px;
         }
       }
 
@@ -142,12 +270,48 @@
 .phone,
 .email {
   margin-bottom: 20px;
+
+  @include galaxy {
+    margin-bottom: 10px;
+  }
+
+  @include iphoneX {
+    margin-bottom: 10px;
+  }
+
+  @include iphone5 {
+    margin-bottom: 5px;
+  }
+
+  @include gFold {
+    margin-bottom: 10px;
+  }
+
+  @include plus {
+    margin-bottom: 10px;
+  }
 }
 
 .location {
   margin-top: 20px;
 
-  @include mobile {
+  @include galaxy {
+    margin-top: 10px;
+  }
+
+  @include iphoneX {
+    margin-top: 10px;
+  }
+
+  @include iphone5 {
+    margin-top: 10px;
+  }
+
+  @include gFold {
+    margin-top: 10px;
+  }
+
+  @include plus {
     margin-top: 10px;
   }
 }
@@ -172,13 +336,34 @@
 
 .form-group {
   margin-bottom: 15px;
+
+  @include galaxy {
+    margin-bottom: 5px;
+  }
+
+  @include iphoneX {
+    margin-bottom: 5px;
+  }
+
+  @include iphone5 {
+    margin-bottom: 5px;
+  }
+
+  @include gFold {
+    margin-bottom: 5px;
+  }
+
+  @include plus {
+    margin-bottom: 5px;
+  }
 }
 
 .contact-info {
   margin-top: -40px;
 
-  @include mobile {
+  @include galaxy {
     flex-direction: column;
+    margin-top: -80px;
     font-size: 10px;
 
     h2 {
@@ -187,6 +372,62 @@
 
     a {
       font-size: 10px;
+    }
+  }
+
+  @include iphoneX {
+    flex-direction: column;
+    margin-top: -90px;
+    font-size: 10px;
+
+    h2 {
+      font-size: 13px;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+
+  @include iphone5 {
+    flex-direction: column;
+    margin-top: -80px;
+    font-size: 10px;
+
+    h2 {
+      font-size: 13px;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+
+  @include gFold {
+    flex-direction: column;
+    margin-top: -80px;
+    font-size: 10px;
+
+    h2 {
+      font-size: 13px;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+
+  @include plus {
+    flex-direction: column;
+    margin-top: -80px;
+    font-size: 11px;
+
+    h2 {
+      font-size: 14px;
+    }
+
+    a {
+      font-size: 11px;
     }
   }
 }
@@ -219,7 +460,27 @@
     background: #269694;
   }
 
-  @include mobile {
+  @include galaxy {
+    padding: 9px 20px 7px;
+    font-size: 13px;
+  }
+
+  @include iphoneX {
+    padding: 9px 20px 7px;
+    font-size: 13px;
+  }
+
+  @include iphone5 {
+    padding: 9px 20px 7px;
+    font-size: 13px;
+  }
+
+  @include gFold {
+    padding: 9px 20px 7px;
+    font-size: 13px;
+  }
+
+  @include plus {
     padding: 9px 20px 7px;
     font-size: 13px;
   }
