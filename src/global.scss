@@ -5,52 +5,52 @@ $mainBackground: linear-gradient(45deg, #dfe8eb 50%, rgb(63, 60, 60));
 $width: 768px;
 
 @mixin galaxy {
-  @media (max-width: 360px) and (min-width: 321px) {
+  @media (max-width: 360px) and (min-width: 321px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin iphoneX {
   //iPhone6,7,8
-  @media (max-width: 375px) and (min-width: 361px) {
+  @media (max-width: 375px) and (min-width: 361px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin iphone5 {
-  @media (max-width: 320px) and (min-width: 319px) {
+  @media (max-width: 320px) and (min-width: 319px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin gFold {
   //Galaxy Fold
-  @media (max-width: 280px) and (min-width: 279px) {
+  @media (max-width: 280px) and (min-width: 279px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin plus {
   //iPhone plus & Pixel
-  @media (max-width: 550px) and (min-width: 410px) {
+  @media (max-width: 550px) and (min-width: 410px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin ipad {
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin ipadPro {
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin surface {
-  @media (max-width: 540px) {
+  @media (max-width: 540px) and (orientation: portrait) {
     @content;
   }
 }
