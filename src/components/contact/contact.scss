@@ -24,6 +24,10 @@
     flex-direction: column;
   }
 
+  @include otherMobile {
+    flex-direction: column;
+  }
+
   .itemContainer {
     display: flex;
 
@@ -84,6 +88,16 @@
         font-size: 11px;
       }
     }
+
+    @include otherMobile {
+      .icon {
+        font-size: 15px;
+      }
+
+      a {
+        font-size: 11px;
+      }
+    }
   }
 
   a {
@@ -129,6 +143,10 @@
       margin-top: -100px;
     }
 
+    @include otherMobile {
+      margin-top: -100px;
+    }
+
     h2 {
       font-family: "Raleway", sans-serif;
       font-weight: 900;
@@ -155,6 +173,10 @@
       }
 
       @include plus {
+        font-size: 15px;
+      }
+
+      @include otherMobile {
         font-size: 15px;
       }
     }
@@ -196,6 +218,11 @@
           width: 300px;
           height: 35px;
         }
+
+        @include otherMobile {
+          width: 250px;
+          height: 30px;
+        }
       }
 
       textarea {
@@ -226,6 +253,11 @@
         @include plus {
           width: 300px;
           height: 185px;
+        }
+
+        @include otherMobile {
+          width: 250px;
+          height: 150px;
         }
       }
 
@@ -290,6 +322,10 @@
   @include plus {
     margin-bottom: 10px;
   }
+
+  @include otherMobile {
+    margin-bottom: 10px;
+  }
 }
 
 .location {
@@ -312,6 +348,10 @@
   }
 
   @include plus {
+    margin-top: 10px;
+  }
+
+  @include otherMobile {
     margin-top: 10px;
   }
 }
@@ -354,6 +394,10 @@
   }
 
   @include plus {
+    margin-bottom: 5px;
+  }
+
+  @include otherMobile {
     margin-bottom: 5px;
   }
 }
@@ -430,6 +474,20 @@
       font-size: 11px;
     }
   }
+
+  @include otherMobile {
+    flex-direction: column;
+    margin-top: -90px;
+    font-size: 10px;
+
+    h2 {
+      font-size: 13px;
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
 }
 .form-group input,
 .form-group textarea {
@@ -481,6 +539,11 @@
   }
 
   @include plus {
+    padding: 9px 20px 7px;
+    font-size: 13px;
+  }
+
+  @include otherMobile {
     padding: 9px 20px 7px;
     font-size: 13px;
   }

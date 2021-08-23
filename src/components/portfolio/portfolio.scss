@@ -28,6 +28,10 @@
     @include plus {
       font-size: 30px;
     }
+
+    @include otherMobile {
+      font-size: 30px;
+    }
   }
 
   .container {
@@ -54,6 +58,10 @@
     }
 
     @include plus {
+      width: 100%;
+    }
+
+    @include otherMobile {
       width: 100%;
     }
 
@@ -98,6 +106,12 @@
         height: 110px;
       }
 
+      @include otherMobile {
+        width: 140px;
+        height: 110px;
+        margin: 5px 10px;
+      }
+
       h3 {
         position: absolute;
         font-size: 20px;
@@ -119,6 +133,10 @@
         }
 
         @include plus {
+          font-size: 15px;
+        }
+
+        @include otherMobile {
           font-size: 15px;
         }
       }

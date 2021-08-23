@@ -29,6 +29,11 @@
     align-items: center;
   }
 
+  @include otherMobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     overflow: hidden;
@@ -63,6 +68,10 @@
         align-items: flex-start;
       }
 
+      @include otherMobile {
+        align-items: flex-start;
+      }
+
       img {
         //height: 90%;
         border-radius: 50%;
@@ -84,6 +93,10 @@
         }
 
         @include plus {
+          height: 67%;
+        }
+
+        @include otherMobile {
           height: 67%;
         }
       }
@@ -127,6 +140,11 @@
         align-items: center;
       }
 
+      @include otherMobile {
+        padding-left: 0;
+        align-items: center;
+      }
+
       h1 {
         font-size: 60px;
         margin: 10px 0;
@@ -144,6 +162,10 @@
         }
 
         @include gFold {
+          font-size: 40px;
+        }
+
+        @include otherMobile {
           font-size: 40px;
         }
       }
@@ -169,6 +191,10 @@
 
         @include gFold {
           font-size: 20px;
+        }
+
+        @include otherMobile {
+          font-size: 25px;
         }
 
         span {

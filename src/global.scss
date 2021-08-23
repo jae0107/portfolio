@@ -30,6 +30,12 @@ $width: 768px;
   }
 }
 
+@mixin otherMobile {
+  @media (max-width: 389px) and (min-width: 376px) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin plus {
   //iPhone plus & Pixel
   @media (max-width: 550px) and (min-width: 410px) and (orientation: portrait) {

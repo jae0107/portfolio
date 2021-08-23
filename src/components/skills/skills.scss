@@ -30,6 +30,10 @@
     @include plus {
       font-size: 30px;
     }
+
+    @include otherMobile {
+      font-size: 30px;
+    }
   }
   .container {
     width: 70%;
@@ -55,6 +59,10 @@
     }
 
     @include plus {
+      width: 100%;
+    }
+
+    @include otherMobile {
       width: 100%;
     }
 
@@ -104,6 +112,13 @@
         margin-bottom: 20px;
       }
 
+      @include otherMobile {
+        width: 90px;
+        height: 90px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+
       img {
         width: 90px;
 
@@ -125,6 +140,10 @@
 
         @include plus {
           width: 79px;
+        }
+
+        @include otherMobile {
+          width: 70px;
         }
       }
     }

@@ -32,6 +32,10 @@
       bottom: 90px;
     }
 
+    @include otherMobile {
+      bottom: 50px;
+    }
+
     &.left {
       left: 100px;
       transform: rotateY(180deg);
@@ -63,6 +67,11 @@
       }
 
       @include plus {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
+      }
+
+      @include otherMobile {
         -webkit-filter: contrast(0%);
         filter: contrast(0%);
       }
@@ -130,6 +139,10 @@
             flex: 10;
           }
 
+          @include otherMobile {
+            flex: 10;
+          }
+
           .leftContainer {
             width: 90%;
             height: 90%;
@@ -180,6 +193,10 @@
               }
 
               @include plus {
+                font-size: 13px;
+              }
+
+              @include otherMobile {
                 font-size: 13px;
               }
             }
