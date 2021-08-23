@@ -5,19 +5,46 @@ $mainBackground: linear-gradient(45deg, #dfe8eb 50%, rgb(63, 60, 60));
 $width: 768px;
 
 @mixin mobile {
-  @media (max-width: #{$width}) {
+  //iPhone6,7,8 & Galaxy S
+  @media (max-width: 375px) and (min-width: 321px) {
     @content;
   }
 }
 
 @mixin iphone5 {
-  @media (max-width: 325px) {
+  @media (max-width: 320px) and (min-width: 319px) {
+    @content;
+  }
+}
+
+@mixin gFold {
+  //Galaxy Fold
+  @media (max-width: 280px) and (min-width: 279px) {
+    @content;
+  }
+}
+
+@mixin pro {
+  //iPhone Pro & Pixel
+  @media (max-width: 414px) and (min-width: 410px) {
     @content;
   }
 }
 
 @mixin ipad {
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin ipadPro {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin surface {
+  @media (max-width: 540px) {
     @content;
   }
 }
