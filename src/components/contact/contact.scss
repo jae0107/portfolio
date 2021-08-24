@@ -28,6 +28,10 @@
     flex-direction: column;
   }
 
+  @include surface {
+    flex-direction: column;
+  }
+
   .itemContainer {
     display: flex;
 
@@ -98,6 +102,16 @@
         font-size: 11px;
       }
     }
+
+    @include surface {
+      .icon {
+        font-size: 15px;
+      }
+
+      a {
+        font-size: 11px;
+      }
+    }
   }
 
   a {
@@ -119,9 +133,9 @@
   .right {
     flex: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     @include galaxy {
       margin-top: -70px;
@@ -145,6 +159,10 @@
 
     @include otherMobile {
       margin-top: -100px;
+    }
+
+    @include surface {
+      margin-top: -40px;
     }
 
     h2 {
@@ -179,11 +197,15 @@
       @include otherMobile {
         font-size: 15px;
       }
+
+      @include surface {
+        font-size: 25px;
+      }
     }
 
     form {
-      width: 80%;
-      height: 80%;
+      //width: 80%;
+      //height: 80%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -223,6 +245,23 @@
           width: 250px;
           height: 30px;
         }
+
+        @include surface {
+          width: 300px;
+          height: 25px;
+        }
+
+        @include ipad {
+          width: 350px;
+          height: 40px;
+          font-size: 20px;
+        }
+
+        @include ipadPro {
+          width: 450px;
+          height: 40px;
+          font-size: 20px;
+        }
       }
 
       textarea {
@@ -258,6 +297,23 @@
         @include otherMobile {
           width: 250px;
           height: 150px;
+        }
+
+        @include surface {
+          width: 300px;
+          height: 150px;
+        }
+
+        @include ipad {
+          width: 350px;
+          height: 600px;
+          font-size: 20px;
+        }
+
+        @include ipadPro {
+          width: 450px;
+          height: 600px;
+          font-size: 20px;
         }
       }
 
@@ -326,6 +382,10 @@
   @include otherMobile {
     margin-bottom: 10px;
   }
+
+  @include surface {
+    margin-bottom: 10px;
+  }
 }
 
 .location {
@@ -375,31 +435,7 @@
 }
 
 .form-group {
-  margin-bottom: 15px;
-
-  @include galaxy {
-    margin-bottom: 5px;
-  }
-
-  @include iphoneX {
-    margin-bottom: 5px;
-  }
-
-  @include iphone5 {
-    margin-bottom: 5px;
-  }
-
-  @include gFold {
-    margin-bottom: 5px;
-  }
-
-  @include plus {
-    margin-bottom: 5px;
-  }
-
-  @include otherMobile {
-    margin-bottom: 5px;
-  }
+  margin-bottom: 5px;
 }
 
 .contact-info {
@@ -488,10 +524,31 @@
       font-size: 10px;
     }
   }
-}
-.form-group input,
-.form-group textarea {
-  font-size: 16px;
+
+  @include surface {
+    flex-direction: column;
+    font-size: 14px;
+
+    h2 {
+      font-size: 17px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+
+  @include ipadPro {
+    font-size: 25px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    a {
+      font-size: 25px;
+    }
+  }
 }
 
 .location a.btn.btn-accent {
@@ -544,6 +601,11 @@
   }
 
   @include otherMobile {
+    padding: 9px 20px 7px;
+    font-size: 13px;
+  }
+
+  @include surface {
     padding: 9px 20px 7px;
     font-size: 13px;
   }

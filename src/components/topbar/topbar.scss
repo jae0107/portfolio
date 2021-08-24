@@ -64,6 +64,14 @@
           display: none;
         }
 
+        @include surface {
+          display: none;
+        }
+
+        @include ipad {
+          display: none;
+        }
+
         .icon {
           font-size: 18px;
           margin-right: 5px;

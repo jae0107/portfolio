@@ -36,6 +36,14 @@
       bottom: 50px;
     }
 
+    @include surface {
+      bottom: 50px;
+    }
+
+    @include ipad {
+      bottom: 150px;
+    }
+
     &.left {
       left: 100px;
       transform: rotateY(180deg);
@@ -72,6 +80,16 @@
       }
 
       @include otherMobile {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
+      }
+
+      @include surface {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
+      }
+
+      @include ipad {
         -webkit-filter: contrast(0%);
         filter: contrast(0%);
       }
@@ -140,6 +158,14 @@
           }
 
           @include otherMobile {
+            flex: 10;
+          }
+
+          @include surface {
+            flex: 10;
+          }
+
+          @include ipad {
             flex: 10;
           }
 

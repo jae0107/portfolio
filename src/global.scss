@@ -38,25 +38,25 @@ $width: 768px;
 
 @mixin plus {
   //iPhone plus & Pixel
-  @media (max-width: 550px) and (min-width: 410px) and (orientation: portrait) {
-    @content;
-  }
-}
-
-@mixin ipad {
-  @media (max-width: 768px) and (orientation: portrait) {
-    @content;
-  }
-}
-
-@mixin ipadPro {
-  @media (max-width: 1024px) and (orientation: portrait) {
+  @media (max-width: 539px) and (min-width: 410px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin surface {
-  @media (max-width: 540px) and (orientation: portrait) {
+  @media (max-width: 767px) and (min-width: 540px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: 1023px) and (min-width: 768px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin ipadPro {
+  @media (max-width: 1100px) and (min-width: 1024px) and (orientation: portrait) {
     @content;
   }
 }

@@ -32,6 +32,14 @@
     @include otherMobile {
       font-size: 30px;
     }
+
+    @include surface {
+      font-size: 30px;
+    }
+
+    @include ipad {
+      font-size: 30px;
+    }
   }
 
   .container {
@@ -62,6 +70,18 @@
     }
 
     @include otherMobile {
+      width: 100%;
+    }
+
+    @include surface {
+      width: 100%;
+    }
+
+    @include ipad {
+      width: 100%;
+    }
+
+    @include ipadPro {
       width: 100%;
     }
 
@@ -110,6 +130,21 @@
         width: 140px;
         height: 110px;
         margin: 5px 10px;
+      }
+
+      @include surface {
+        width: 200px;
+        height: 130px;
+      }
+
+      @include ipad {
+        width: 200px;
+        height: 130px;
+      }
+
+      @include ipadPro {
+        width: 270px;
+        height: 200px;
       }
 
       h3 {
