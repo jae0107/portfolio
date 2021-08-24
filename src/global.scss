@@ -60,3 +60,9 @@ $width: 768px;
     @content;
   }
 }
+
+@mixin iphone5_land {
+  @media (max-width: 639px) and (min-width: 568px) and (orientation: landscape) {
+    @content;
+  }
+}

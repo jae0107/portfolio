@@ -63,6 +63,11 @@
       justify-content: center;
       float: right;
 
+      @include iphone5_land {
+        width: 100vh;
+        height: 100vh;
+      }
+
       @include galaxy {
         align-items: flex-start;
       }
@@ -137,6 +142,10 @@
 
         @include ipadPro {
           height: 115%;
+        }
+
+        @include iphone5_land {
+          height: 110%;
         }
       }
     }
@@ -230,6 +239,10 @@
         @include ipadPro {
           font-size: 95px;
         }
+
+        @include iphone5_land {
+          font-size: 37px;
+        }
       }
 
       h2 {
@@ -273,6 +286,10 @@
 
         @include ipadPro {
           font-size: 75px;
+        }
+
+        @include iphone5_land {
+          font-size: 17px;
         }
 
         span {

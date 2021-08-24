@@ -72,6 +72,10 @@
           display: none;
         }
 
+        @include iphone5_land {
+          display: none;
+        }
+
         .icon {
           font-size: 18px;
           margin-right: 5px;

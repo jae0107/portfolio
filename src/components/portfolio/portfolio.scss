@@ -40,6 +40,11 @@
     @include ipad {
       font-size: 30px;
     }
+
+    @include iphone5_land {
+      font-size: 30px;
+      margin-top: 5px;
+    }
   }
 
   .container {
@@ -82,6 +87,10 @@
     }
 
     @include ipadPro {
+      width: 100%;
+    }
+
+    @include iphone5_land {
       width: 100%;
     }
 
@@ -147,6 +156,12 @@
         height: 200px;
       }
 
+      @include iphone5_land {
+        width: 105px;
+        height: 75px;
+        margin: 5px 10px;
+      }
+
       h3 {
         position: absolute;
         font-size: 20px;
@@ -172,6 +187,10 @@
         }
 
         @include otherMobile {
+          font-size: 15px;
+        }
+
+        @include iphone5_land {
           font-size: 15px;
         }
       }

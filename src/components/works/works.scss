@@ -45,14 +45,24 @@
     }
 
     &.left {
-      left: 100px;
+      //left: 100px;
+      left: 10%;
       transform: rotateY(180deg);
       -webkit-filter: contrast(0%);
       filter: contrast(0%);
+
+      @include iphone5_land {
+        left: 0px;
+      }
     }
 
     &.right {
-      right: 100px;
+      //right: 100px;
+      right: 10%;
+
+      @include iphone5_land {
+        right: 0px;
+      }
 
       @include galaxy {
         -webkit-filter: contrast(0%);
@@ -97,17 +107,12 @@
   }
 
   .slider {
-    height: 350px;
+    //height: 350px;
+    height: 90%;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
-
-    @include galaxy {
-      /*height: 100vh;
-      flex-direction: column;
-      justify-content: center;*/
-    }
 
     .container {
       width: 100vw;
@@ -116,7 +121,8 @@
       justify-content: center;
 
       .item {
-        width: 700px;
+        //width: 700px;
+        width: 70%;
         height: 100%;
         background-color: white;
         border-radius: 20px;
@@ -124,10 +130,10 @@
         align-items: center;
         justify-content: center;
 
-        @include galaxy {
-          /* width: 80%;
-          height: 150px;
-          margin: 15px 0;*/
+        @include iphone5_land {
+          width: 80%;
+          //height: 90%;
+          //margin: 15px 0;
         }
 
         .left {
@@ -169,6 +175,10 @@
             flex: 10;
           }
 
+          @include iphone5_land {
+            flex: 10;
+          }
+
           .leftContainer {
             width: 90%;
             height: 90%;
@@ -185,17 +195,12 @@
               align-items: center;
               justify-content: center;
 
-              @include galaxy {
-                //width: 20px;
-                //height: 20px;
+              @include iphone5_land {
+                display: none;
               }
 
               img {
                 width: 25px;
-
-                @include galaxy {
-                  //width: 15px;
-                }
               }
             }
 
@@ -225,6 +230,10 @@
               @include otherMobile {
                 font-size: 13px;
               }
+
+              @include iphone5_land {
+                font-size: 93%;
+              }
             }
 
             p {
@@ -233,12 +242,27 @@
               @include gFold {
                 font-size: 11px;
               }
+
+              @include iphone5_land {
+                font-size: 11px;
+              }
             }
 
             a {
               font-size: 12px;
               font-weight: 600;
               text-decoration: underline;
+
+              @include iphone5_land {
+                font-size: 11px;
+              }
+            }
+          }
+
+          button {
+            @include iphone5_land {
+              padding: 3px 12px 1px;
+              font-size: 11px;
             }
           }
         }

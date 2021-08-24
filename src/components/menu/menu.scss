@@ -31,8 +31,22 @@
     color: white;
     width: 60%;
 
+    @include iphone5_land {
+      font-size: 20px;
+    }
+
+    @include iphone5_land {
+      .first {
+        margin-top: 70px;
+      }
+    }
+
     li {
       margin-bottom: 25px;
+
+      @include iphone5_land {
+        margin-bottom: 20px;
+      }
 
       a {
         font-size: inherit;
