@@ -217,37 +217,37 @@
         font-size: 14px;
 
         @include galaxy {
-          width: 250px;
+          width: 300px;
           height: 30px;
         }
 
         @include iphoneX {
-          width: 250px;
+          width: 340px;
           height: 30px;
         }
 
         @include iphone5 {
-          width: 250px;
+          width: 300px;
           height: 25px;
         }
 
         @include gFold {
-          width: 230px;
-          height: 30px;
+          width: 260px;
+          height: 25px;
         }
 
         @include plus {
-          width: 300px;
+          width: 390px;
           height: 35px;
         }
 
         @include otherMobile {
-          width: 250px;
+          width: 350px;
           height: 30px;
         }
 
         @include surface {
-          width: 300px;
+          width: 520px;
           height: 25px;
         }
 
@@ -270,37 +270,37 @@
         font-size: 14px;
 
         @include galaxy {
-          width: 250px;
+          width: 300px;
           height: 150px;
         }
 
         @include iphoneX {
-          width: 250px;
+          width: 340px;
           height: 150px;
         }
 
         @include iphone5 {
-          width: 250px;
+          width: 300px;
           height: 120px;
         }
 
         @include gFold {
-          width: 230px;
-          height: 150px;
+          width: 260px;
+          height: 120px;
         }
 
         @include plus {
-          width: 300px;
+          width: 390px;
           height: 185px;
         }
 
         @include otherMobile {
-          width: 250px;
+          width: 350px;
           height: 150px;
         }
 
         @include surface {
-          width: 300px;
+          width: 520px;
           height: 150px;
         }
 
@@ -435,7 +435,7 @@
 }
 
 .form-group {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .contact-info {
