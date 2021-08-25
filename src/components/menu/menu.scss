@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .menu {
-  width: 300px;
+  width: 25%; //300px;
   height: 100vh;
   background: linear-gradient(-45deg, rgb(63, 60, 60) 50%, $mainColor 50%);
   position: fixed;
@@ -14,8 +14,8 @@
   justify-content: center;
   transition: all 1s ease;
 
-  @include gFold {
-    width: 250px;
+  @media (orientation: portrait) {
+    width: 40%;
   }
 
   &.active {
@@ -23,29 +23,24 @@
   }
 
   ul {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
+    font-size: 4.5vmin; //30px;
     font-weight: 300;
     color: white;
     width: 60%;
 
-    @include iphone5_land {
-      font-size: 20px;
-    }
-
-    @include iphone5_land {
-      .first {
-        margin-top: 70px;
-      }
+    .first {
+      margin-top: 45%;
     }
 
     li {
-      margin-bottom: 25px;
+      margin-bottom: 3.8vmin; //25px;
 
-      @include iphone5_land {
-        margin-bottom: 20px;
+      @media (orientation: portrait) {
+        margin-bottom: 10vmin;
       }
 
       a {

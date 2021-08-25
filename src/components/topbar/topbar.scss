@@ -8,6 +8,7 @@
   position: fixed;
   top: 0;
   z-index: 3;
+  overflow: hidden;
 
   .wrapper {
     padding: 10px 30px;
@@ -40,39 +41,7 @@
         align-items: center;
         margin-left: 30px;
 
-        @include galaxy {
-          display: none;
-        }
-
-        @include iphoneX {
-          display: none;
-        }
-
-        @include iphone5 {
-          display: none;
-        }
-
-        @include gFold {
-          display: none;
-        }
-
-        @include plus {
-          display: none;
-        }
-
-        @include otherMobile {
-          display: none;
-        }
-
-        @include surface {
-          display: none;
-        }
-
-        @include ipad {
-          display: none;
-        }
-
-        @include iphone5_land {
+        @media (max-width: 864px) {
           display: none;
         }
 

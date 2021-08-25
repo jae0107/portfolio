@@ -3,48 +3,10 @@
 .intro {
   background: $mainBackground;
   display: flex;
+  overflow: hidden;
+  height: 100%;
 
-  @include galaxy {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include iphoneX {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include iphone5 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include gFold {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include plus {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include otherMobile {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include surface {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include ipad {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @include ipadPro {
+  @media (orientation: portrait) {
     flex-direction: column;
     align-items: center;
   }
@@ -54,59 +16,29 @@
     overflow: hidden;
 
     .imgContainer {
-      width: 700px;
-      height: 700px;
+      width: 102.5%; //700px;
+      height: 117.8%; //700px;
       background: linear-gradient(-45deg, #dfe8eb 50%, rgb(63, 60, 60));
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
+      overflow: hidden;
 
-      @include iphone5_land {
-        width: 100vh;
-        height: 100vh;
+      @media (orientation: portrait) {
+        width: 700px;
+        height: 700px;
       }
 
-      @include galaxy {
-        align-items: flex-start;
-      }
-
-      @include iphoneX {
-        align-items: flex-start;
-      }
-
-      @include iphone5 {
-        align-items: flex-start;
-      }
-
-      @include gFold {
-        align-items: flex-start;
-      }
-
-      @include plus {
-        align-items: flex-start;
-      }
-
-      @include otherMobile {
-        align-items: flex-start;
-      }
-
-      @include surface {
-        align-items: flex-start;
-      }
-
-      @include ipad {
-        align-items: flex-start;
-      }
-
-      @include ipadPro {
+      @media (orientation: portrait) {
         align-items: flex-start;
       }
 
       img {
-        //height: 90%;
+        height: 110%;
         border-radius: 50%;
+        overflow: hidden;
 
         @include galaxy {
           height: 50%;
@@ -143,10 +75,6 @@
         @include ipadPro {
           height: 115%;
         }
-
-        @include iphone5_land {
-          height: 110%;
-        }
       }
     }
   }
@@ -158,138 +86,45 @@
     .wrapper {
       width: 100%;
       height: 100%;
-      padding-left: 50px;
+      padding-left: 7.5%; //50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      @include galaxy {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include iphoneX {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include iphone5 {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include gFold {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include plus {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include otherMobile {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include surface {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include ipad {
-        padding-left: 0;
-        align-items: center;
-      }
-
-      @include ipadPro {
+      @media (orientation: portrait) {
         padding-left: 0;
         align-items: center;
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 9.1vmin; //60px;
         margin: 10px 0;
+        overflow: hidden;
 
-        @include galaxy {
-          font-size: 40px;
-        }
-
-        @include iphoneX {
-          font-size: 40px;
-        }
-
-        @include iphone5 {
-          font-size: 40px;
-        }
-
-        @include gFold {
-          font-size: 40px;
-        }
-
-        @include otherMobile {
-          font-size: 40px;
-        }
-
-        @include ipad {
-          font-size: 75px;
-        }
-
-        @include ipadPro {
-          font-size: 95px;
-        }
-
-        @include iphone5_land {
-          font-size: 37px;
+        @media (orientation: portrait) {
+          font-size: 10vmin; //40px;
         }
       }
 
       h2 {
-        font-size: 35px;
+        font-size: 5.3vmin; //35px;
+        overflow: hidden;
 
-        @include ipad {
-          font-size: 60px;
-        }
-
-        @include ipadPro {
-          font-size: 80px;
+        @media (orientation: portrait) {
+          font-size: 7vmin; //35px;
         }
       }
 
       h3 {
-        font-size: 30px;
+        font-size: 4.5vmin; //30px;
+        overflow: hidden;
 
-        @include galaxy {
-          font-size: 20px;
-        }
-
-        @include iphoneX {
-          font-size: 25px;
-        }
-
-        @include iphone5 {
-          font-size: 20px;
-        }
-
-        @include gFold {
-          font-size: 20px;
-        }
-
-        @include otherMobile {
-          font-size: 25px;
-        }
-
-        @include ipad {
-          font-size: 55px;
-        }
-
-        @include ipadPro {
-          font-size: 75px;
+        @media (orientation: portrait) {
+          font-size: 6vmin; //30px;
         }
 
         @include iphone5_land {
-          font-size: 17px;
+          //font-size: 17px;
         }
 
         span {
@@ -314,7 +149,7 @@
 
     a {
       position: absolute;
-      bottom: 10px;
+      bottom: 3%;
       left: 40%;
 
       img {

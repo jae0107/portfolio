@@ -4,6 +4,12 @@ $mainBackground: linear-gradient(45deg, #dfe8eb 50%, rgb(63, 60, 60));
 
 $width: 768px;
 
+@mixin mobile {
+  @media (max-width: 539px) and (min-width: 279px) and (orientation: portrait) {
+    @content;
+  }
+}
+
 @mixin galaxy {
   @media (max-width: 360px) and (min-width: 321px) and (orientation: portrait) {
     @content;
