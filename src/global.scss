@@ -10,6 +10,12 @@ $width: 768px;
   }
 }
 
+@mixin mobileLand {
+  @media (max-height: 539px) and (min-height: 280px) and (orientation: landscape) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: 1400px) and (min-width: 540px) and (orientation: portrait) {
     @content;

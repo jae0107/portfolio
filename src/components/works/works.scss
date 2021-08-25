@@ -8,40 +8,12 @@
   position: relative;
 
   .arrow {
-    height: 50px;
+    height: 10vmin; //50px;
     position: absolute;
     cursor: pointer;
 
-    @include galaxy {
-      bottom: 30px;
-    }
-
-    @include iphoneX {
-      bottom: 50px;
-    }
-
-    @include iphone5 {
-      bottom: 10px;
-    }
-
-    @include gFold {
-      bottom: 20px;
-    }
-
-    @include plus {
-      bottom: 90px;
-    }
-
-    @include otherMobile {
-      bottom: 50px;
-    }
-
-    @include surface {
-      bottom: 50px;
-    }
-
-    @include ipad {
-      bottom: 150px;
+    @media (orientation: portrait) {
+      bottom: 10%;
     }
 
     &.left {
@@ -50,20 +22,17 @@
       transform: rotateY(180deg);
       -webkit-filter: contrast(0%);
       filter: contrast(0%);
-
-      @include iphone5_land {
-        left: 0px;
-      }
     }
 
     &.right {
       //right: 100px;
       right: 10%;
 
-      @include iphone5_land {
-        right: 0px;
+      @media (orientation: portrait) {
+        -webkit-filter: contrast(0%);
+        filter: contrast(0%);
       }
-
+      /*
       @include galaxy {
         -webkit-filter: contrast(0%);
         filter: contrast(0%);
@@ -102,17 +71,20 @@
       @include ipad {
         -webkit-filter: contrast(0%);
         filter: contrast(0%);
-      }
+      }*/
     }
   }
 
   .slider {
-    //height: 350px;
-    height: 90%;
+    height: 350px;
+    //height: 90%;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+    @media (orientation: portrait) {
+    }
 
     .container {
       width: 100vw;
@@ -121,8 +93,8 @@
       justify-content: center;
 
       .item {
-        //width: 700px;
-        width: 70%;
+        width: 700px;
+        //width: 70%;
         height: 100%;
         background-color: white;
         border-radius: 20px;

@@ -9,6 +9,12 @@
   h1 {
     font-size: 7.5vmin;
     overflow: hidden;
+    margin-bottom: 1vh;
+
+    @include mobileLand {
+      font-size: 6.3vh;
+      margin-bottom: 0.5vh;
+    }
   }
 
   .container {
@@ -42,6 +48,12 @@
         margin: 1vmin 2vmin;
       }
 
+      @include mobileLand {
+        width: 38vmin;
+        height: 27vmin;
+        margin: 1vmin 2vmin;
+      }
+
       @include tablet {
         width: 26vmin;
         height: 17vmin;
@@ -54,6 +66,10 @@
         overflow: hidden;
 
         @include mobile {
+          font-size: 3.5vmin;
+        }
+
+        @include mobileLand {
           font-size: 3.5vmin;
         }
 
