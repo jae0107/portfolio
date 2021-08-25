@@ -1,12 +1,12 @@
 @import "../../global.scss";
 
 .menu {
-  width: 25%; //300px;
+  width: 25%;
   height: 100vh;
   background: linear-gradient(-45deg, rgb(63, 60, 60) 50%, $mainColor 50%);
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -25%;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,7 @@
 
   @media (orientation: portrait) {
     width: 40%;
+    right: -40%;
   }
 
   &.active {
@@ -27,7 +28,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 4.5vmin; //30px;
+    font-size: 4.5vmin;
     font-weight: 300;
     color: white;
     width: 60%;
@@ -37,7 +38,7 @@
     }
 
     li {
-      margin-bottom: 3.8vmin; //25px;
+      margin-bottom: 3.8vmin;
 
       @media (orientation: portrait) {
         margin-bottom: 10vmin;
