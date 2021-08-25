@@ -13,7 +13,7 @@
     cursor: pointer;
 
     @media (orientation: portrait) {
-      bottom: 10%;
+      bottom: 9.5%;
     }
 
     &.left {
@@ -22,6 +22,18 @@
       transform: rotateY(180deg);
       -webkit-filter: contrast(0%);
       filter: contrast(0%);
+
+      @media (orientation: portrait) {
+        left: 30%;
+      }
+
+      @include mobileLand {
+        left: 5%;
+      }
+
+      @include tabletLand {
+        left: 5%;
+      }
     }
 
     &.right {
@@ -31,59 +43,40 @@
       @media (orientation: portrait) {
         -webkit-filter: contrast(0%);
         filter: contrast(0%);
-      }
-      /*
-      @include galaxy {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
+        right: 30%;
       }
 
-      @include iphoneX {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
+      @include mobileLand {
+        right: 5%;
       }
 
-      @include iphone5 {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
+      @include tabletLand {
+        right: 5%;
       }
-
-      @include gFold {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
-      }
-
-      @include plus {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
-      }
-
-      @include otherMobile {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
-      }
-
-      @include surface {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
-      }
-
-      @include ipad {
-        -webkit-filter: contrast(0%);
-        filter: contrast(0%);
-      }*/
     }
   }
 
   .slider {
-    height: 350px;
-    //height: 90%;
+    height: 52.6vmin; //350px;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
 
     @media (orientation: portrait) {
+      height: 55vh;
+
+      @include tablet {
+        height: 50vh;
+      }
+    }
+
+    @include mobileLand {
+      height: 70vh;
+    }
+
+    @include tabletLand {
+      height: 70vh;
     }
 
     .container {
@@ -93,8 +86,7 @@
       justify-content: center;
 
       .item {
-        width: 700px;
-        //width: 70%;
+        width: 50%;
         height: 100%;
         background-color: white;
         border-radius: 20px;
@@ -102,52 +94,30 @@
         align-items: center;
         justify-content: center;
 
-        @include iphone5_land {
+        @media (orientation: portrait) {
+          width: 71%;
+
+          @include mobile {
+            width: 100%;
+          }
+        }
+
+        @include mobileLand {
           width: 80%;
-          //height: 90%;
-          //margin: 15px 0;
+        }
+
+        @include tabletLand {
+          width: 70%;
         }
 
         .left {
-          flex: 4;
+          flex: 7;
           height: 90%;
           display: flex;
           align-items: center;
           justify-content: center;
 
-          @include galaxy {
-            flex: 10;
-          }
-
-          @include iphoneX {
-            flex: 10;
-          }
-
-          @include iphone5 {
-            flex: 10;
-          }
-
-          @include gFold {
-            flex: 10;
-          }
-
-          @include plus {
-            flex: 10;
-          }
-
-          @include otherMobile {
-            flex: 10;
-          }
-
-          @include surface {
-            flex: 10;
-          }
-
-          @include ipad {
-            flex: 10;
-          }
-
-          @include iphone5_land {
+          @media (orientation: portrait) {
             flex: 10;
           }
 
@@ -156,7 +126,8 @@
             height: 90%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            //justify-content: space-between;
 
             .imgContainer {
               width: 40px;
@@ -167,7 +138,7 @@
               align-items: center;
               justify-content: center;
 
-              @include iphone5_land {
+              @include mobileLand {
                 display: none;
               }
 
@@ -177,64 +148,49 @@
             }
 
             h2 {
-              font-size: 20px;
-
-              @include galaxy {
-                font-size: 13px;
-              }
-
-              @include iphoneX {
-                font-size: 13px;
-              }
-
-              @include iphone5 {
-                font-size: 13px;
-              }
-
-              @include gFold {
-                font-size: 11px;
-              }
-
-              @include plus {
-                font-size: 13px;
-              }
-
-              @include otherMobile {
-                font-size: 13px;
-              }
-
-              @include iphone5_land {
-                font-size: 93%;
-              }
+              font-size: 4vmin; //20px;
+              overflow: hidden;
             }
 
             p {
-              font-size: 13px;
+              font-size: 2vmin; //13px;
+              overflow: hidden;
 
-              @include gFold {
-                font-size: 11px;
+              @include mobile {
+                font-size: 3vmin;
               }
 
-              @include iphone5_land {
-                font-size: 11px;
+              @include mobileLand {
+                font-size: 3vmin;
               }
             }
 
             a {
-              font-size: 12px;
+              font-size: 2vmin;
               font-weight: 600;
               text-decoration: underline;
+              margin-top: 2vmin;
 
-              @include iphone5_land {
-                font-size: 11px;
+              @include mobile {
+                font-size: 3vmin;
+              }
+
+              @include mobileLand {
+                font-size: 3vmin;
               }
             }
           }
 
           button {
-            @include iphone5_land {
-              padding: 3px 12px 1px;
-              font-size: 11px;
+            font-size: 2vmin;
+            padding: 1vmin 1vmin 1vmin;
+
+            @include mobile {
+              font-size: 3vmin;
+            }
+
+            @include mobileLand {
+              font-size: 3vmin;
             }
           }
         }
@@ -248,7 +204,7 @@
           overflow: hidden;
 
           img {
-            width: 400px;
+            width: 100%; //400px;
             transform: rotate(-10deg);
           }
         }

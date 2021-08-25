@@ -24,7 +24,7 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1400px) and (hover: none) and (pointer: coarse) {
       width: 100%;
     }
 

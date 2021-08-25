@@ -71,7 +71,7 @@ export const featuredPortfolio = [
       img:
         "assets/maptek-home.jpg",
       content: "assets/staff-management-content.png",
-      desc: "This is a staff management tool for Maptek which is an Adelaide-based company.",
+      desc: "This is a staff management tool for Maptek which is an Adelaide-based company. Authorised staff can manage staff information.",
       link: "",
       detail: "https://github.com/jae0107/Maptek-Staff-Management-Utility",
       usage: "JavsScript, Google API, Google App Script and Google Sheets",
