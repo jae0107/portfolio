@@ -8,7 +8,7 @@
   position: relative;
 
   .arrow {
-    height: 10vmin; //50px;
+    height: 10vmin;
     position: absolute;
     cursor: pointer;
 
@@ -17,7 +17,6 @@
     }
 
     &.left {
-      //left: 100px;
       left: 10%;
       transform: rotateY(180deg);
       -webkit-filter: contrast(0%);
@@ -37,7 +36,6 @@
     }
 
     &.right {
-      //right: 100px;
       right: 10%;
 
       @media (orientation: portrait) {
@@ -57,7 +55,7 @@
   }
 
   .slider {
-    height: 52.6vmin; //350px;
+    height: 52.6vmin;
     display: flex;
     position: absolute;
     left: 0;
@@ -127,7 +125,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            //justify-content: space-between;
 
             .imgContainer {
               width: 40px;
@@ -148,12 +145,12 @@
             }
 
             h2 {
-              font-size: 4vmin; //20px;
+              font-size: 4vmin;
               overflow: hidden;
             }
 
             p {
-              font-size: 2vmin; //13px;
+              font-size: 2vmin;
               overflow: hidden;
 
               @include mobile {
@@ -204,7 +201,7 @@
           overflow: hidden;
 
           img {
-            width: 100%; //400px;
+            width: 100%;
             transform: rotate(-10deg);
           }
         }
