@@ -40,40 +40,32 @@
         border-radius: 50%;
         overflow: hidden;
 
-        @include galaxy {
-          height: 50%;
-        }
-
-        @include iphoneX {
-          height: 65%;
-        }
-
         @include iphone5 {
-          height: 45%;
+          height: 48%;
         }
 
-        @include gFold {
-          height: 53%;
+        @include galaxy {
+          height: 55%;
+        }
+
+        @include iphone6 {
+          height: 58%;
         }
 
         @include plus {
-          height: 67%;
+          height: 61%;
         }
 
-        @include otherMobile {
-          height: 67%;
+        @include iphoneX {
+          height: 69%;
         }
 
-        @include surface {
-          height: 58%;
+        @include iphone12 {
+          height: 78%;
         }
 
         @include ipad {
           height: 85%;
-        }
-
-        @include ipadPro {
-          height: 115%;
         }
       }
     }

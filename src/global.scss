@@ -28,65 +28,44 @@ $width: 768px;
   }
 }
 
-@mixin galaxy {
-  @media (max-width: 360px) and (min-width: 321px) and (orientation: portrait) {
-    @content;
-  }
-}
-
-@mixin iphoneX {
-  //iPhone6,7,8
-  @media (max-width: 375px) and (min-width: 361px) and (orientation: portrait) {
-    @content;
-  }
-}
-
 @mixin iphone5 {
-  @media (width: 320px) and (orientation: portrait) {
+  @media (max-height: 568px) and (orientation: portrait) {
     @content;
   }
 }
 
-@mixin gFold {
-  //Galaxy Fold
-  @media (max-width: 319px) and (min-width: 279px) and (orientation: portrait) {
+@mixin galaxy {
+  @media (max-height: 653px) and (min-height: 569px) and (orientation: portrait) {
     @content;
   }
 }
 
-@mixin otherMobile {
-  @media (max-width: 409px) and (min-width: 376px) and (orientation: portrait) {
+@mixin iphone6 {
+  @media (max-height: 720px) and (min-height: 654px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin plus {
-  //iPhone plus & Pixel
-  @media (max-width: 539px) and (min-width: 410px) and (orientation: portrait) {
+  @media (max-height: 763px) and (min-height: 721px) and (orientation: portrait) {
     @content;
   }
 }
 
-@mixin surface {
-  @media (max-width: 719px) and (min-width: 540px) and (orientation: portrait) {
+@mixin iphoneX {
+  @media (max-height: 823px) and (min-height: 764px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin iphone12 {
+  @media (max-height: 926px) and (min-height: 824px) and (orientation: portrait) {
     @content;
   }
 }
 
 @mixin ipad {
-  @media (max-width: 1023px) and (min-width: 720px) and (orientation: portrait) {
-    @content;
-  }
-}
-
-@mixin ipadPro {
-  @media (max-width: 1100px) and (min-width: 1024px) and (orientation: portrait) {
-    @content;
-  }
-}
-
-@mixin iphone5_land {
-  @media (max-width: 639px) and (min-width: 568px) and (orientation: landscape) {
+  @media (max-height: 1024px) and (min-height: 927px) and (orientation: portrait) {
     @content;
   }
 }
