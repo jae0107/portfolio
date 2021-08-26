@@ -46,9 +46,9 @@ const Contact = () => {
                     </div>
                     <div className="location">
                         <h2>Location</h2>
-                        Gosse International Student Residence<br></br>
+                        <p>Gosse International Student Residence<br></br>
                         Room 26, 2 Highgate St<br></br>
-                        Fullarton SA 5063<br></br>
+                        Fullarton SA 5063</p>
                         <a className="btn btn-accent" href="https://www.google.com/maps/place/Gosse+International+Student+Residence/@-34.9572511,138.620861,15z/data=!4m5!3m4!1s0x0:0xa70352ed2ab3e671!8m2!3d-34.9572511!4d138.620861" >Google Map</a>
                     </div>
                 </div>
