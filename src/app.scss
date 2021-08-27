@@ -10,7 +10,7 @@
     position: relative;
     top: 10.5vmin; //70px;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    //scroll-snap-type: y mandatory;
     scrollbar-width: none; //for firefox
     &::-webkit-scrollbar {
       display: none;

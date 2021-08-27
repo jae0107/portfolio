@@ -12,6 +12,11 @@ node_modules
 # production
 /build
 
+# Firebase Hosting
+/.firebase
+.firebaserc
+firebase-debug.log
+
 # misc
 .DS_Store
 .env.local

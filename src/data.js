@@ -43,7 +43,7 @@ export const featuredPortfolio = [
       icon: "assets/mobile-game-icon.png",
       title: "Mobile tag game app",
       img:
-        "assets/mobile-tag-game.png",
+        "assets/mobile-tag-game.PNG",
       content: "assets/mobile-tag-game-content.PNG",
       desc: "This is a tag game which can be played on mobiles, tablets and computers.",
       link: "",
