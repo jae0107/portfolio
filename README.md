@@ -14,6 +14,7 @@ This is my responsive portfolio website developed in React.
     npm i ityped
     npm install emailjs-com --save
     npm i react-modal-video
+    npm i react-router-dom
 
 ## Contents
 
