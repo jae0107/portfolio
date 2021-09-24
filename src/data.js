@@ -1,6 +1,19 @@
 export const featuredPortfolio = [
     {
       id: 1,
+      icon: "assets/portfolio-icon.png",
+      title: "Portfolio Web",
+      img:
+        "assets/portfolio-home.png",
+      content: "assets/portfolio-content.png",
+      desc: "This is a responsive portfolio website.",
+      link: "/",
+      detail: "https://github.com/jae0107/portfolio",
+      usage: "React",
+      video: "assets/portfolio-video.mp4"
+    },
+    {
+      id: 2,
       icon: "assets/zoom-icon.png",
       title: "Zoom clone",
       img:
@@ -13,7 +26,7 @@ export const featuredPortfolio = [
       video: "assets/zoom-video.mp4"
     },
     {
-      id: 2,
+      id: 3,
       icon: "assets/youtube.png",
       title: "YouTube clone",
       img:
@@ -26,7 +39,7 @@ export const featuredPortfolio = [
       video: "assets/youtube-video.mp4"
     },
     {
-      id: 3,
+      id: 4,
       icon: "assets/e-commerce-icon.png",
       title: "E-commerce Web",
       img:
@@ -39,7 +52,7 @@ export const featuredPortfolio = [
       video: "assets/e-commerce-video.mp4"
     },
     {
-      id: 4,
+      id: 5,
       icon: "assets/mobile-game-icon.png",
       title: "Mobile tag game app",
       img:
@@ -50,19 +63,6 @@ export const featuredPortfolio = [
       detail: "https://github.com/jae0107/Mobile-Tag-Game",
       usage: "p5.js, Node.js, Rxjs and JavaScript",
       video: "assets/mobile-tag-game-video.mp4"
-    },
-    {
-      id: 5,
-      icon: "assets/portfolio-icon.png",
-      title: "Portfolio Web",
-      img:
-        "assets/portfolio-home.png",
-      content: "assets/portfolio-content.png",
-      desc: "This is a responsive portfolio website.",
-      link: "/",
-      detail: "https://github.com/jae0107/portfolio",
-      usage: "React",
-      video: "assets/portfolio-video.mp4"
     },
     {
       id: 6,

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import "./works.scss";
+import "./projects.scss";
 import { featuredPortfolio } from "../../data";
 import { Link } from 'react-router-dom';
 import ModalVideo from 'react-modal-video';
 
-const Works = () => {
+const Projects = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
         setData(featuredPortfolio);
@@ -28,7 +28,7 @@ const Works = () => {
     }    
 
     return (
-        <div className="works" id="works">
+        <div className="projects" id="projects">
             <ModalVideo channel='custom' isOpen={isOpen} url={video_src} onClose={() => setOpen(false)} />
             <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
                 {data.map((datum) => (
@@ -60,4 +60,4 @@ const Works = () => {
     )
 }
 
-export default Works
+export default Projects
