@@ -46,13 +46,26 @@ export const featuredPortfolio = [
         "assets/e-commerce-home.png",
       content: "assets/e-commerce-content.png",
       desc: "This is an E-Commerce web.",
-      link: "Angular, Express.js, Node.js and MySQL",
+      link: "",
       detail: "https://github.com/jae0107/Ecommerce-App",
       usage: "Angular, Express.js, Node.js and MySQL",
       video: "assets/e-commerce-video.mp4"
     },
     {
       id: 5,
+      icon: "assets/virus-icon.png",
+      title: "COVID-19 Tracker",
+      img:
+        "assets/covid-tracker-home.png",
+      content: "assets/covid-tracker-content.PNG",
+      desc: "This is a responsive COVID-19 tracker web. It shows new cases, recoveries and deaths by a country.",
+      link: "https://covid-tracker7.web.app/ ",
+      detail: "https://github.com/jae0107/covid-tracker",
+      usage: "React and disease.sh API",
+      video: "assets/covid-tracker-video.mp4"
+    },
+    {
+      id: 6,
       icon: "assets/mobile-game-icon.png",
       title: "Mobile tag game app",
       img:
@@ -65,7 +78,7 @@ export const featuredPortfolio = [
       video: "assets/mobile-tag-game-video.mp4"
     },
     {
-      id: 6,
+      id: 7,
       icon: "assets/staff-management.png",
       title: "Staff Management Web",
       img:
@@ -78,7 +91,7 @@ export const featuredPortfolio = [
       video: "assets/staff-management-video.mp4"
     },
     {
-      id: 7,
+      id: 8,
       icon: "assets/education-icon.png",
       title: "Educational Web",
       img:
