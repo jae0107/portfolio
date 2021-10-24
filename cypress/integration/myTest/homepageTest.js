@@ -32,4 +32,8 @@ describe("renders the home page", () => {
     it("projects component test", () => {
       cy.get("#projects").should("exist");
     });
+
+    it("contact component test", () => {
+      cy.get("#contact").should("exist");
+    });
 });
