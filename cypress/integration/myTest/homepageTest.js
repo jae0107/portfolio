@@ -7,5 +7,6 @@ describe("renders the home page", () => {
   
     it("renders correctly", () => {
       cy.get("#container").should("exist");
+      cy.get("#intro").should("exist");
     });
 });
