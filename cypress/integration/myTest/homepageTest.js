@@ -7,7 +7,18 @@ describe("renders the home page", () => {
   
     it("renders correctly", () => {
       cy.get("#container").should("exist");
+    });
+
+    it("intro component test", () => {
       cy.get("#intro").should("exist");
+    });
+
+    it("topbar component test", () => {
       cy.get("#topbar").should("exist");
     });
+
+    it("topbar component test", () => {
+      cy.get("#menu").should("exist");
+    });
+
 });
