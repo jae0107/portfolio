@@ -24,4 +24,8 @@ describe("renders the home page", () => {
     it("skills component test", () => {
       cy.get("#skills").should("exist");
     });
+
+    it("portfolio component test", () => {
+      cy.get("#portfolio").should("exist");
+    });
 });
