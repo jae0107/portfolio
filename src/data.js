@@ -59,7 +59,7 @@ export const featuredPortfolio = [
         "assets/covid-tracker-home.png",
       content: "assets/covid-tracker-content.PNG",
       desc: "This is a responsive COVID-19 tracker web. It shows new cases, recoveries and deaths by a country.",
-      link: "https://covid-tracker7.web.app/ ",
+      link: "https://covid-tracker7.web.app/",
       detail: "https://github.com/jae0107/covid-tracker",
       usage: "React and disease.sh API",
       video: "assets/covid-tracker-video.mp4"
