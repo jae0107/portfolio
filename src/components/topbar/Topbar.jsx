@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Topbar = ({ menuOpen, setMenuOpen }) => {
     return (
-        <div className={"topbar " + (menuOpen && "active")}>
+        <div className={"topbar " + (menuOpen && "active")} id="topbar">
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">Jae Choi</a>
