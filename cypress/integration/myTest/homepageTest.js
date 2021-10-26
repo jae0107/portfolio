@@ -31,12 +31,13 @@ describe("renders the home page", () => {
       cy.get("#contact").should("exist");
     });
 
-    it("intro component test", () => {
+    it.only("intro component test", () => {
       cy.viewport('macbook-16');
       cy.get("#intro").should("exist");
+      cy.get("#down").click();
     });
 
-    it.only("topbar component test", () => {
+    it("topbar component test", () => {
       cy.get("#topbar").should("exist");
       cy.get(".logo").click();
       cy.get("#linkedin").click();
@@ -46,6 +47,7 @@ describe("renders the home page", () => {
 
     it("menu component test", () => {
       cy.get("#menu").should("exist");
+      cy.get(".hamburger").click();
     });
 
     it("skills component test", () => {

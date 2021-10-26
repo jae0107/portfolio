@@ -27,7 +27,7 @@ const Intro = () => {
                     <h1>Jae Choi</h1>
                     <h3>Graduate <span ref={textRef}></span></h3>
                 </div>
-                <a href="#skills">
+                <a href="#skills" id="down">
                     <img src="assets/down.png" alt="" />
                 </a>
             </div>
