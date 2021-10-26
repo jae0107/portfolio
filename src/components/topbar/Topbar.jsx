@@ -20,17 +20,17 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
                         <Mail className="icon" />
                         <span>ghjgjh0107@gmail.com</span>
                     </div>
-                    <div className="itemContainer">
+                    <div className="itemContainer" id="linkedin">
                             <Link style={{ color: '#16181b' }} to={{ pathname: "https://www.linkedin.com/in/jae-choi-11422a185/" }} target="_blank" >
-                                <LinkedInIcon className="icon" />
+                                <LinkedInIcon />
                             </Link>
                     </div>
-                    <div className="itemContainer">
+                    <div className="itemContainer" id="github">
                         <Link style={{ color: '#16181b' }} to={{ pathname: "https://github.com/jae0107" }} target="_blank" >
                             <GitHubIcon className="icon" />
                         </Link>
                     </div>
-                    <div className="itemContainer">
+                    <div className="itemContainer" id="resume">
                         <Link style={{ color: '#16181b' }} to="/assets/Jae_Resume.docx" target="_blank" download>Resume (CV)</Link>
                     </div>
                 </div>

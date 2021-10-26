@@ -30,16 +30,21 @@ describe("renders the home page", () => {
       cy.get("#projects").should("exist");
       cy.get("#contact").should("exist");
     });
-/*
+
     it("intro component test", () => {
+      cy.viewport('macbook-16');
       cy.get("#intro").should("exist");
     });
 
-    it("topbar component test", () => {
+    it.only("topbar component test", () => {
       cy.get("#topbar").should("exist");
+      cy.get(".logo").click();
+      cy.get("#linkedin").click();
+      cy.get("#github").click();
+      cy.get("#resume").click();
     });
 
-    it("topbar component test", () => {
+    it("menu component test", () => {
       cy.get("#menu").should("exist");
     });
 
@@ -57,5 +62,5 @@ describe("renders the home page", () => {
 
     it("contact component test", () => {
       cy.get("#contact").should("exist");
-    });*/
+    });
 });
