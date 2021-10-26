@@ -45,7 +45,7 @@ describe("renders the home page", () => {
       cy.get("#resume").click();
     });
 
-    it.only("menu component test", () => {
+    it("menu component test", () => {
       cy.get("#menu").should("exist");
       cy.get(".hamburger").click();
       cy.get("#intro").click();
@@ -67,8 +67,9 @@ describe("renders the home page", () => {
       cy.get("#portfolio").should("exist");
     });
 
-    it("projects component test", () => {
+    it.only("projects component test", () => {
       cy.get("#projects").should("exist");
+      cy.get("#arrow_right").click();
     });
 
     it("contact component test", () => {

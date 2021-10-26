@@ -54,8 +54,8 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
-            <img src="assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")} />
-            <img src="assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick()} />
+            <img src="assets/arrow.png" id="arrow_left" className="arrow left" alt="" onClick={() => handleClick("left")} />
+            <img src="assets/arrow.png" id="arrow_right" className="arrow right" alt="" onClick={() => handleClick()} />
         </div>
     )
 }
