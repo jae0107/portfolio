@@ -31,7 +31,7 @@ describe("renders the home page", () => {
       cy.get("#contact").should("exist");
     });
 
-    it.only("intro component test", () => {
+    it("intro component test", () => {
       cy.viewport('macbook-16');
       cy.get("#intro").should("exist");
       cy.get("#down").click();
@@ -45,9 +45,18 @@ describe("renders the home page", () => {
       cy.get("#resume").click();
     });
 
-    it("menu component test", () => {
+    it.only("menu component test", () => {
       cy.get("#menu").should("exist");
       cy.get(".hamburger").click();
+      cy.get("#intro").click();
+      cy.get(".hamburger").click();
+      cy.get("#skills").click();
+      cy.get(".hamburger").click();
+      cy.get("#portfolio").click();
+      cy.get(".hamburger").click();
+      cy.get("#projects").click();
+      cy.get(".hamburger").click();
+      cy.get("#contact").click();
     });
 
     it("skills component test", () => {

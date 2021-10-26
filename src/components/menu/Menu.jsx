@@ -5,19 +5,19 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
     return (
         <div className={"menu "+(menuOpen && "active")} id="menu">
             <ul>
-                <li className="first" onClick={()=>setMenuOpen(false)}>
+                <li id="intro" className="first" onClick={()=>setMenuOpen(false)}>
                     <a href="#intro">Home</a>
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
+                <li id="skills" onClick={()=>setMenuOpen(false)}>
                     <a href="#skills">Skills</a>
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
+                <li id="portfolio" onClick={()=>setMenuOpen(false)}>
                     <a href="#portfolio">Portfolio</a>
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
+                <li id="projects" onClick={()=>setMenuOpen(false)}>
                     <a href="#projects">Projects</a>
                 </li>
-                <li onClick={()=>setMenuOpen(false)}>
+                <li id="contact" onClick={()=>setMenuOpen(false)}>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
