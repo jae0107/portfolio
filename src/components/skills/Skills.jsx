@@ -51,6 +51,9 @@ const Skills = () => {
                 <div className="imgContainer">
                     <img src="assets/mysql-logo.png" alt="MySQL" />
                 </div>
+                <div className="imgContainer">
+                    <img src="assets/cypress-logo.png" alt="cypress" />
+                </div>
             </div>
         </div>
     )
