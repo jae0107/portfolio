@@ -31,6 +31,9 @@ const Skills = () => {
                     <img src="assets/google-apps-script-icon.png" alt="Google_app_script" />
                 </div>
                 <div className="imgContainer">
+                    <img src="assets/scss-icon.png" alt="scss" />
+                </div>
+                <div className="imgContainer">
                     <img src="assets/express-icon.png" alt="Express" />
                 </div>
                 <div className="imgContainer">
