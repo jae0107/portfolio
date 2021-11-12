@@ -34,6 +34,9 @@ const Skills = () => {
                     <img src="assets/scss-icon.png" alt="scss" />
                 </div>
                 <div className="imgContainer">
+                    <img src="assets/css-icon.jpeg" alt="css" />
+                </div>
+                <div className="imgContainer">
                     <img src="assets/express-icon.png" alt="Express" />
                 </div>
                 <div className="imgContainer">
